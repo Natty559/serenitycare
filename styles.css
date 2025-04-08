@@ -1,0 +1,489 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    background-color: #0c3c7f;
+    padding: 20px 50px;
+    color: #fff;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f1c40f;
+}
+
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background-color: #0c3c7f;
+    color: white;
+    padding: 100px 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero .cta-button {
+    background-color: #f1c40f;
+    color: #0c3c7f;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero .cta-button:hover {
+    background-color: #d4ac0d;
+}
+
+/* Services Section */
+#services {
+    text-align: center;
+    background-color: #fff;
+    padding: 50px 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.service-btn {
+    background-color: #0c3c7f;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.service-btn:hover {
+    background-color: #f1c40f;
+}
+
+/* Form Section */
+.form-container {
+    display: none;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-container input,
+.form-container select,
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    background-color: #0c3c7f;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #f1c40f;
+}
+
+/* Contact Us Section */
+#contact {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    color: #333;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#contact h2 {
+    color: #0c3c7f;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Contact Container */
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Contact Details */
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    flex: 1 1 250px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+/* Contact Us Section */
+#contact {
+    background-color: #f1f1f1;
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Contact Container */
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Heading */
+#contact h2 {
+    font-size: 2rem;
+    color: #0c3c7f;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Contact Paragraph */
+#contact p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Form Elements */
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Focus State for Form Elements */
+#contact form input:focus,
+#contact form textarea:focus {
+    border-color: #0c3c7f;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Textarea Styling */
+#contact form textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Submit Button Styling */
+#contact form button {
+    background-color: #0c3c7f;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Submit Button */
+#contact form button:hover {
+    background-color: #084d72;
+}
+
+/* Animation for Fade-In */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    #contact h2 {
+        font-size: 1.5rem;
+    }
+
+    #contact p {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+
+    #contact form input,
+    #contact form textarea {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    #contact form button {
+        font-size: 1rem;
+    }
+}
+
+
+.contact-item
+
+/* About Us Section */
+/* About Us Section */
+#about {
+    background-color: #f1f1f1; /* Light background for contrast */
+    padding: 60px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    color: #0c3c7f; /* Dark blue color */
+    margin-bottom: 20px;
+}
+
+.about-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.about-mission {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    font-weight: 300;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    #about {
+        padding: 40px 20px;
+    }
+
+    .about-container {
+        padding: 20px;
+    }
+
+    #about h2 {
+        font-size: 2rem;
+    }
+
+    .about-description, .about-mission {
+        font-size: 1rem;
+    }
+}
+
+
+/* Animation for fadeIn effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* About Container */
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph Styling */
+#about p {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    #about h2 {
+        font-size: 1.5rem;
+    }
+
+    #about p {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+}
+
+
+/* About Section */
+#about {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    color: #0c3c7f;
+}
+
+/* Footer */
+/* Footer Styling */
+footer {
+    background-color: #0c3c7f; /* Dark Blue */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-info {
+    margin-bottom: 20px;
+}
+
+.footer-info p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.footer-socials p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #f1c40f; /* Golden color for hover effect */
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    background-color: #1a4977; /* Slightly darker blue */
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .footer-container {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .footer-info p {
+        font-size: 0.9rem;
+    }
+
+    .social-link {
+        font-size: 1rem;
+        margin: 5px 8px;
+    }
+}
+
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
