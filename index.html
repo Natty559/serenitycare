@@ -1,140 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serenity Care</title>
+    <title>TRUE DREAMERS TRAVEL AND TOUR</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="still.html">
 </head>
+<link rel="stylesheet" href="index.css">
+<script src="index.js" async defer type="text/javascript"></script>
+<link rel="stylesheet" href="index.js">
 
 <body>
-    <!-- Header -->
     <header>
-        <div class="logo">
-            <img src="Serenitycare blue.png" alt="Serenity Care Logo">
-        </div>
         <nav>
             <ul>
-                <li><a href="#services">Our Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="aboutus_nav.html">About us</a></li>
             </ul>
         </nav>
     </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Welcome to Serenity Care</h1>
-        <p>Providing Quality Healthcare at Your Convenience</p>
-        <button class="cta-button"><a href="still.html">Get Started</a></button>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="services-container">
-            <button class="service-btn" onclick="showForm('Nutritional Support')">Nutritional Support</button>
-            <button class="service-btn" onclick="showForm('Health Check-up')">Health Check-up</button>
-            <button class="service-btn" onclick="showForm('Preventative Care')">Preventative Care</button>
-            <button class="service-btn" onclick="showForm('Memory Care')">Memory Care</button>
-        </div>
-        <div class="form-container" id="service-form">
-            <h3>Request a Service</h3>
-            <form id="serviceRequestForm">
-                <input type="text" id="name" placeholder="Enter your name" required>
-                <input type="number" id="age" placeholder="Enter your age" required>
-                <input type="text" id="town" placeholder="Enter your town" required>
-                <select id="gender" required>
-                    <option value="">Select gender</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Other">Other</option>
-                </select>
-                <input type="tel" id="contact" placeholder="Enter your contact number" required>
-                <input type="text" id="service" readonly>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section id="about">
-        <h2>Your Health is Our Top Notch</h2>
-        <p>Serenity Care is a company that is here to stay. Our main focus is to ensure that the aged and people with disabilities enjoy quality and convenient health care in the comfort of their homes.</p>
-    </section>
-<!-- Contact Us Section -->
-<section id="contact">
-    <div class="contact-container">
-        <h2>Contact Us</h2>
-        <p>We're here to help. Get in touch with us for any inquiries or assistance!</p>
-
-        <div class="contact-details">
-            <div class="contact-item">
-                <i class="fa fa-phone"></i>
-                <h3>Phone Numbers</h3>
-                <p>0592737620, 0271389999, 0248026624</p>
+    <img src="logo.jpg" alt="Hero Image" style="height: 100px;width: 100px;" id="logo">
+     <p id="WELCOME">WELCOME</p>
+     <p id="TO">TO</p>
+    <h1 class="title">TRUE DREAMERS TRAVEL AND TOUR</h1>
+    <main>
+        <section id="home">
+            <h1>Welcome to TRUE DREAMERS TRAVEL AND TOUR</h1>
+            <img src="logo.jpg" alt="Hero Image" style="height: 50px;width: 50px;">
+            <p>Explore the world with us!</p>
+        </section>
+        <section id="destinations">
+            <h2>Popular Destinations</h2>
+            <div class="destination-grid">
+                <div class="destination">
+                    <img src="UK.jpg" alt="Destination 1" style="height: 70px;;">
+                    <h3>United Kindom(UK)</h3>
+                    <p>United Kindom(UK)</p>
+                </div>
+                <div class="destination">
+                    <img src="China.jpg" alt="Destination 2" style="height: 70px;">
+                    <h3>CHINA</h3>
+                    <p>CHINA</p>
+                </div>
+                <div class="destination">
+                    <img src="others.jpg" alt="Destination Others" style="height: 70px;">
+                    <h3>Others</h3>
+                    <p>Travel destination in various countries</p>
+                </div>
+                <!-- Add more destinations -->
             </div>
-
-            <div class="contact-item">
-                <i class="fa fa-instagram"></i>
-                <h3>Instagram</h3>
-                <p>@Serenity_car.or</p> 
+        </section>
+        <section id="packages">
+            <h2>Travel Packages</h2>
+            <div class="package-grid">
+                <div class="package">
+                    <img src="japan.jpg" alt="Package 1" style="height: 70px;">
+                    <h3>Japan</h3>
+                    <p>Japan</p>
+                    <button style="background-color: lightcyan; color: black;">Book Now</button>
+                </div>
+                <div class="package">
+                    <img src="Argentina.jpg" alt="Package 2" style="height: 70px;;">
+                    <h3>Argentina</h3>
+                    <p>Argentina</p>
+                    <button style="background-color: lightcyan; color: black;">Book Now</button>
+                </div>
+                <div class="package">
+                    <img src="others.jpg" alt="Package 2" style="height: 70px;">
+                    <h3>Others</h3>
+                    <p>Others</p>
+                    <button style="background-color: lightcyan; color: black;">Book Now</button>
+                </div>
+                <!-- Add more packages -->
             </div>
-
-            <div class="contact-item">
-                <i class="fa fa-tiktok"></i>
-                <h3>TikTok</h3>
-                <p>@serenity_care.org</p>
-            </div>
-
-            <div class="contact-item">
-                <i class="fa fa-facebook"></i>
-                <h3>Facebook</h3>
-                <p>@Serenity Age</p>
-            </div>
-        </div>
-
-        <div class="contact-form">
-            <h3>Send Us a Message</h3>
+        </section>
+        <section id="contact">
+            <h2>Get in Touch</h2>
             <form>
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="email@gmail.com" required>
-                <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
-                <button type="submit">Send Message</button>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <button>Send</button>
             </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="logo.jpg" alt="logo.jpg" class="footer-logo-img">
+            </div>
+            <div class="footer-info">
+                <p><strong>Location:</strong> Abuakwa Ashanti</p>
+                <p><strong>Contact:</strong> +233 551155126</p>
+                <p><strong>P. O. Box:</strong> 94</p>
+            </div>
+            <div class="footer-socials">
+                <p><strong>Follow Us:</strong></p>
+                <a href="https://www.instagram.com/TrueDreamers" target="_blank" class="social-link">Instagram</a>
+                <a href="https://www.tiktok.com/@TrueDreamers" target="_blank" class="social-link">TikTok</a>
+                <a href="https://www.Facebook.com/TrueDreamers" target="_blank" class="social-link">Facebook</a>
+                <a href="https://www.twiter.com/TrueDreamers" target="_blank" class="social-link">Twiter</a>
+                <a href="https://www.Youtube.com/TrueDreamers" target="_blank" class="social-link">Youtube</a>
+            </div>
         </div>
-    </div>
-</section>
-
-
-    <!-- Footer -->
-    <!-- Footer Section -->
-<footer>
-    <div class="footer-container">
-        <div class="footer-logo">
-            <img src="Serenitycare blue.png" alt="SerenityCare Logo" class="footer-logo-img">
-        </div>
-        <div class="footer-info">
-            <p><strong>Location:</strong> Abuakwa Ashanti</p>
-            <p><strong>Contact:</strong> +233 592737620</p>
-            <p><strong>P. O. Box:</strong> 20</p>
-        </div>
-        <div class="footer-socials">
-            <p><strong>Follow Us:</strong></p>
-            <a href="https://www.instagram.com/serenity_care.or" target="_blank" class="social-link">Instagram</a>
-            <a href="https://www.tiktok.com/@serenity_care.org" target="_blank" class="social-link">TikTok</a>
-            <a href="https://www.facebook.com/Serenity Age" target="_blank" class="social-link">Facebook</a>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2025 SerenityCare. All Rights Reserved.</p>
-        <p>Designed by Natty_fyn</p>
-    </div>
-</footer>
-
+        <div class="footer-bottom">
+            <p>&copy; 2025 True Dreamers. All Rights Reserved.</p>
+            <p>Designed by Natty_fyn</p>
 </body>
-
 </html>
+
